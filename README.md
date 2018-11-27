@@ -13,7 +13,11 @@ There are 4 Jupyter notebook and 1 Pthon Script.
 + Digit recognition script
 + Digit recognition notebook
 
-#### numpy random notebook
+## *Explain the rquirements about this project*
+### numpy random notebook
 a jupyter notebook explaining the con- cepts behind and the use of the numpy random package, including plots of the various distributions. <br/>
-#### Iris dataset notebook
+### Iris dataset notebook
 a jupyter notebook explaining the famous iris data set including the difficulty in writing an algorithm to separate the three classes of iris based on the variables in the dataset. <br/>
+### MNIST dataset notebook
+a jupyter notebook explaining how to read the MNIST dataset efficiently into memory in Python.
+
