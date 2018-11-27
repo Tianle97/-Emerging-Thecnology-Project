@@ -14,7 +14,6 @@ There are 4 Jupyter notebook and 1 Pthon Script.
 + Digit recognition notebook
 
 ## *Explain the rquirements about this project*
-<br/>
 ### numpy random notebook <br/>
 a jupyter notebook explaining the con- cepts behind and the use of the numpy random package, including plots of the various distributions. <br/>
 ### Iris dataset notebook <br/>
