@@ -20,10 +20,10 @@ a jupyter notebook explaining the con- cepts behind and the use of the numpy ran
 ### Iris dataset notebook
 a jupyter notebook explaining the famous iris data set including the difficulty in writing an algorithm to separate the three classes of iris based on the variables in the dataset. <br/>
 ### MNIST dataset notebook
-a jupyter notebook explaining how to read the MNIST dataset efficiently into memory in Python.
+a jupyter notebook explaining how to read the MNIST dataset efficiently into memory in Python. <br/>
 ### Digit recognition script
-a Python script that takes an image file containing a handwritten digit and identifies the digit using a super- vised learning algorithm and the MNIST dataset.
+a Python script that takes an image file containing a handwritten digit and identifies the digit using a super- vised learning algorithm and the MNIST dataset. <br/>
 ### Digit recognition notebook
-a jupyter notebook explaining how the above Python script works and discussing its performance.
+a jupyter notebook explaining how the above Python script works and discussing its performance. <br/>
 
 
