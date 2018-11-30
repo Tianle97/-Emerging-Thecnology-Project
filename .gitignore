@@ -102,3 +102,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+/mtk/           表示过滤整个文件夹
+*.jpg           表示过滤所有.zip文件
+/mtk/do.c  
