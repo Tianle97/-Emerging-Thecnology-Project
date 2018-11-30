@@ -25,4 +25,27 @@ a Python script that takes an image file containing a handwritten digit and iden
 ### Digit recognition notebook <br/>
 a jupyter notebook explaining how the above Python script works and discussing its performance. <br/>
 
+## *Run*
+Firstly, you have to install [Anaconda Version 3.7 ](https://www.anaconda.com/download/#macos)
+
+### *How to clone this repository*
+* Go to the [GitHub](https://www.github.com) [repository page](https://github.com/Tianle97/Emerging-Thecnology-Project)
+* Find the link to clone the repository.
+#### or
+* just download the zip file
+
+### *How to run these scripts*
+go to the repository folder, open the command-line interpreter or terminal(mac), 
+
+type ``` python title.py```
+
+### *How to open the jupyter notebook file*
+open the command window and go to this folder path </br>
+
+type ``` jupyter notebook tutle.ipynb```
+
+#### python3 is needed, [Install tutorial](https://anaconda.org/anaconda/python) 
+
+``` pip install Jupyter / Tensorflow / numpy / Keras  ```
+
 
