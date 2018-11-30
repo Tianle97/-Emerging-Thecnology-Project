@@ -42,7 +42,7 @@ loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels=y, logits=p
 
 # use AdamOptimizer to train
 # More details about AdamOptimizer: https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/
-train_step = tf.train.AdamOptimizer(1e-2).minimize(loss)   # 1e-2 = 10^-2 = 0.02
+train_step = tf.train.AdamOptimizer(1e-3).minimize(loss)   # 1e-2 = 10^-2 = 0.02
 
 # initial glabal variables
 init = tf.global_variables_initializer()
@@ -51,14 +51,19 @@ init = tf.global_variables_initializer()
 correct_prediction = tf.equal(tf.argmax(y,1),tf.argmax(prediction,1)) # correct return true, otherwise return false
 accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32)) # true->1.0   false->0
 
+sum_acc = 0
+loop = 300
 # create loop to train
 with tf.Session() as sess:
     sess.run(init)
-    for eposh in range(21):
+    for eposh in range(loop):
         for batch in range(n_batch):
             batch_xs,batch_ys = mnist.train.next_batch(batch_size)
             sess.run(train_step,{x:batch_xs, y:batch_ys})
 
 # calculate accuracy
         acc = sess.run(accuracy,{x:mnist.test.images, y:mnist.test.labels})
-        print("Iter " + str(eposh) + ",Testing Accuracy " + str(acc))
+        if(eposh%20 ==0):
+            print("Iter " + str(eposh) + ",Testing Accuracy " + str(acc))
+        sum_acc += acc
+print("Accuracy Rate" + str((sum_acc / loop) * 100)+"%")
